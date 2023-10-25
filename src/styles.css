@@ -1,0 +1,50 @@
+ /* En tu archivo style.css o style.scss */
+
+/* Estilo para el título de la página */
+.title {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del título */
+  }
+  
+  /* Estilo para los formularios y etiquetas */
+  .form-group {
+    margin-bottom: 20px; /* Espaciado inferior entre grupos de formulario */
+  }
+  
+  /* Estilo para los campos de entrada de texto */
+  .form-control {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ff9900; /* Borde naranja */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  /* Estilo para los botones */
+  .btn {
+    background-color: #ff9900; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilo para los botones secundarios (Cancelar) */
+  .btn-secondary {
+    background-color: #333; /* Color de fondo del botón secundario */
+  }
+  
+  /* Estilo para las alertas de feedback */
+  .alert {
+    padding: 10px; /* Espaciado interno de la alerta */
+    border-radius: 5px; /* Borde redondeado de la alerta */
+  }
+  
+  /* Estilo para los mensajes de feedback */
+  .alert-warning {
+    background-color: #ff9900; /* Color de fondo de alerta de advertencia */
+    color: #fff; /* Color del texto de alerta de advertencia */
+  }
+  

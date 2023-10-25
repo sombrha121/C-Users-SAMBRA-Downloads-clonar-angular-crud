@@ -1,0 +1,67 @@
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-bottom: 3px solid #ff9900; /* Borde inferior naranja */
+    padding: 10px 0; /* Espaciado interno */
+  }
+  
+  /* Estilo para el botón del menú */
+  .navbar-toggler {
+    background-color: #ff9900; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    color: #333; /* Color del ícono del botón */
+    font-size: 20px; /* Tamaño del ícono */
+  }
+  
+  /* Estilo para el enlace del logotipo */
+  .navbar-brand {
+    font-size: 24px; /* Tamaño del logotipo */
+    font-weight: bold; /* Texto en negrita */
+    color: #ff9900; /* Color del logotipo */
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  /* Estilo para los elementos de la barra de navegación */
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Espaciado entre elementos */
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .nav-link {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  /* Estilo para los íconos de la barra de navegación */
+  .navbar-nav .nav-item i {
+    font-size: 20px; /* Tamaño de los íconos */
+    margin-right: 5px; /* Espaciado entre el ícono y el texto */
+  }
+  
+  /* Estilo para las notificaciones */
+  .notification {
+    background-color: #ff9900; /* Color de fondo de la notificación */
+    color: #fff; /* Color del texto de la notificación */
+    border-radius: 50%; /* Borde redondeado para el número de notificación */
+    width: 20px; /* Ancho de la notificación */
+    height: 20px; /* Altura de la notificación */
+    text-align: center; /* Centra el número */
+    line-height: 20px; /* Alinea verticalmente el número */
+  }
+  
+  /* Estilo para el menú desplegable de notificaciones */
+  .dropdown-menu {
+    background-color: #333; /* Color de fondo del menú desplegable */
+  }
+  
+  /* Estilo para los elementos del menú desplegable */
+  .dropdown-item {
+    color: #fff; /* Color del texto de los elementos del menú */
+  }
+  
+  /* Estilo para la línea divisoria del menú desplegable */
+  .dropdown-divider {
+    background-color: #ff9900; /* Color de la línea divisoria */
+  }
+  

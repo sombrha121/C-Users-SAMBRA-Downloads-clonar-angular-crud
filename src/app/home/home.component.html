@@ -1,0 +1,21 @@
+ 
+
+
+<div class="card">
+  <div class="header">
+    <h1 class="title">Bienvenido {{ userName }}</h1>
+  </div>
+  <div class="content">
+
+    <div *ngIf="needsLogin" class="alert alert-warning">
+      Has sido redirigido a esta página porque no tienes los datos necesarios
+      derechos para la acción solicitada. ¡Inicie sesión con una cuenta de usuario respectiva!
+    </div>
+
+    <button (click)="login()" class="btn btn-default">Logear</button> <!-- Modificamos el texto a español -->
+    <button (click)="logout()" class="btn btn-default">Cerrar Sesión</button>
+
+    <!--<app-tab></app-tab>   <Aquí utilizamos el componente 'tab' -->
+
+  </div>
+</div>

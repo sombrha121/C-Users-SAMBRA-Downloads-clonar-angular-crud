@@ -1,0 +1,33 @@
+/* Estilos para el componente SidebarComponent */
+.sidebar-wrapper {
+    background-color: #333; /* Fondo del sidebar */
+    color: white; /* Color de texto en el sidebar */
+  }
+  
+  .sidebar-wrapper .logo {
+    /* Estilos para el logo */
+    text-align: center;
+  }
+  
+  .sidebar-wrapper .logo-img img {
+    max-width: 100px; /* Ancho máximo para la imagen del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .sidebar-wrapper .nav-item {
+    /* Estilos para los elementos de la lista de navegación */
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .sidebar-wrapper .nav-item a {
+    color: white; /* Color del texto en los enlaces */
+    text-decoration: none;
+  }
+  
+  .sidebar-wrapper .nav-item i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+  }
+  

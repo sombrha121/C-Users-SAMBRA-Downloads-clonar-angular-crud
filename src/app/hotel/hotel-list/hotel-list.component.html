@@ -1,0 +1,55 @@
+<!-- Barra de navegación (breadcrumbs) -->
+<ol class="breadcrumb float-right">
+  <li class="breadcrumb-item"><a routerLink="/">Home22222222</a></li>
+  <li class="breadcrumb-item active">Hotel</li>
+</ol>
+
+<!-- Contenedor principal de la página -->
+<div class="card">
+  <div class="header">
+    <h2 class="title">Hotel Lista</h2> <!-- Título de la página -->
+  </div>
+  <div class="content">
+    <form #f="ngForm"> <!-- Formulario de búsqueda con referencia '#f' para validación -->
+      <div class="form-group">
+        <label for="city">Ciudad:</label>
+        <input [(ngModel)]="filter.city" id="city" name="city" class="form-control"> <!-- Campo de entrada de ciudad -->
+      </div>
+      <button (click)="search()" [disabled]="!f?.valid" class="btn btn-primary">Buscar</button> <!-- Botón de búsqueda -->
+      <a [routerLink]="['../hotels', 'new']" class="btn btn-default">Nuevo</a> <!-- Botón para crear un nuevo hotel -->
+    </form>
+  </div>
+</div>
+
+<!-- Lista de hoteles (solo se muestra si hay hoteles en la lista) -->
+<div class="card" *ngIf="hotelList.length > 0">
+  <div *ngIf="feedback.message" class="alert alert-{{feedback.type}}">{{ feedback.message }}</div> <!-- Mensaje de feedback, como error o éxito -->
+
+  <!-- Tabla que muestra la lista de hoteles -->
+  <div class="table-responsive">
+    <table class="table table-centered table-hover mb-0" id="datatable">
+      <thead>
+        <tr>
+          <th class="border-top-0" scope="col">Id</th>
+          <th class="border-top-0" scope="col">Nombre</th>
+          <th class="border-top-0" scope="col">Ciudad</th>
+          <th class="border-top-0" scope="col">Stars/estrella</th>
+          <th class="border-top-0" scope="col" style="width:120px"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Iteración sobre la lista de hoteles para mostrarlos en la tabla -->
+        <tr *ngFor="let item of hotelList" [class.active]="item === selectedHotel">
+          <td>{{item.id}}</td> <!-- Columna de Id del hotel -->
+          <td>{{item.name}}</td> <!-- Columna de Nombre del hotel -->
+          <td>{{item.city}}</td> <!-- Columna de Ciudad del hotel -->
+          <td>{{item.stars}}</td> <!-- Columna de Estrellas del hotel -->
+          <td style="white-space: nowrap"> <!-- Columna con botones de acción -->
+            <a [routerLink]="['../hotels', item.id ]" class="btn btn-secondary">Editar</a> <!-- Botón para editar el hotel -->
+            <button (click)="delete(item)" class="btn btn-danger">Delete/eliminar</button> <!-- Botón para eliminar el hotel -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
